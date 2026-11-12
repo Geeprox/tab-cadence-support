@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>文档站构建 · Tab Cadence 验收</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f6f7f2;color:#20372f;font:16px/1.6 -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif}
+header{border-bottom:1px solid #d9e2d9;padding:20px max(32px,calc((100vw - 960px)/2));background:#fdfdf8;white-space:nowrap;font-weight:650}
+main{max-width:960px;margin:52px auto;padding:0 32px}h1{font-size:38px;letter-spacing:-.03em;margin:4px 0 8px}p{color:#53685c}
+small{color:#537063}section{margin-top:36px;padding:24px 28px;border:1px solid #d9e2d9;border-radius:18px;background:#fff}
+section h2{font-size:17px;margin:0 0 12px}#state{display:inline-flex;align-items:center;gap:8px;padding:4px 12px;border-radius:24px;background:#e4f2e8;color:#225843;font-weight:600}
+#state:before{content:"";width:7px;height:7px;border-radius:50%;background:#488c68}button{border:1px solid #cbd9ce;background:white;border-radius:8px;padding:8px 14px;color:#244637;font:inherit;cursor:pointer}
+</style>
+<header>发布工作区</header>
+<main>
+  <small>预览部署 / 文档站</small>
+  <h1>文档站构建</h1>
+  <p>构建完成后，回到此页检查预览和发布清单。</p>
+  <section aria-labelledby="status-title">
+    <h2 id="status-title">构建状态</h2>
+    <p id="state" role="status">正在执行</p>
+    <div><button id="complete" type="button">标记完成</button></div>
+  </section>
+</main>
+<script>
+document.querySelector('#complete').addEventListener('click', () => {
+  document.querySelector('#state').textContent = '任务已完成';
+  document.querySelector('#complete').disabled = true;
+});
+</script>
+</html>

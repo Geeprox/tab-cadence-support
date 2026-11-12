@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tab Cadence 隐私政策</title>
+<style>
+body{margin:0;color:#20342d;background:#f5f7f1;font:16px/1.72 -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif}
+main{box-sizing:border-box;max-width:780px;padding:62px 28px 70px;margin:auto}
+header{border-bottom:1px solid #d5ded5;padding-bottom:25px;margin-bottom:32px}
+h1{font-size:clamp(32px,5vw,44px);line-height:1.15;letter-spacing:-.04em;margin:8px 0 12px}
+h2{font-size:21px;letter-spacing:-.02em;margin:32px 0 9px}
+p{margin:0 0 15px}small,.meta{color:#516a5e}a{color:#17664b;text-underline-offset:3px}
+</style>
+<main>
+<header>
+  <small>Tab Cadence</small>
+  <h1>隐私政策</h1>
+  <p class="meta">适用版本 0.1 · 自 Chrome 商店首发日起生效</p>
+  <p>Tab Cadence · <a href="https://github.com/Geeprox/tab-cadence-support/issues">Tab Cadence 支持</a></p>
+</header>
+<section>
+  <h2>本机标签事项</h2>
+  <p>Tab Cadence 使用普通 Chrome 标签的标题、地址、窗口、分组、访问和交互状态，帮助你监听任务、回到待办事项和整理标签。网页监听在本机检查你填写的状态文案。扩展在你操作当前页时获得临时访问权限，或在你选择站点后请求该站点的授权。隐身标签不参与。</p>
+</section>
+<section>
+  <h2>ChatGPT 页内工具</h2>
+  <p>启用此功能需要单独允许访问 chatgpt.com。工具使用当前对话已显示的提问、回答、标题、选区和输入状态提供大纲、批注及排队。偏好和部分对话索引、批注数据保存在本机。排队草稿和发送回执与当前标签会话关联。你加入队列的消息通过 ChatGPT 原输入控件提交到该对话，适用你的 ChatGPT 数据设置。可以在设置停用页内工具并撤销网站权限。</p>
+</section>
+<section>
+  <h2>自备 API 分析</h2>
+  <p>模型分析由你选择启用。确认发送范围后，扩展直接向你配置的 HTTPS 服务商发送网页标题、去掉查询参数和片段的地址、最多 1600 字符的正文摘要和有限页面状态。扩展不读取表单值。标题、路径和正文仍可能包含个人信息。服务商的数据留存、训练与删除政策由服务商及你的账户设置决定。</p>
+  <p>批量分析仅处理你确认的站点。自动复查需要另行选择，完整退出 Chrome 后停用。相同证据可在 24 小时内复用判断。</p>
+</section>
+<section>
+  <h2>密钥与 Mac 助手</h2>
+  <p>API Key 仅用于向你授权的 API 地址认证。运行时值保存在可信扩展上下文的 Chrome 会话存储。选择导入 env 文件时，在本机提取相应密钥。安装可选 Mac 助手并选择记住连接后，助手将密钥存入 macOS 钥匙串。</p>
+  <p>助手使用 Chrome 标签标题、窗口位置和辅助功能坐标定位浮标，并用窗口层级与遮挡区域判断计时是否可见。它不截屏，不保存其他应用的窗口标题。快捷切换只处理启用后所需的组合键，不记录普通键入内容。钥匙串诊断只保留有限的本机状态记录，排除密钥和网页内容。</p>
+</section>
+<section>
+  <h2>保留、删除与数据使用</h2>
+  <p>本机记录包括偏好、监听规则、页面判断、批注、队列及用量。在当前浏览器会话中，可恢复最近 30 分钟由扩展关闭的最多 20 个标签。可在扩展内移除连接密钥和停止监听、复查。移除扩展可清除其浏览器本机记录。若使用独立 Mac 助手，卸载扩展前先移除钥匙串连接，并按安装说明移除助手。第三方服务已接收的数据需通过相应服务管理。</p>
+  <p>Tab Cadence 不运营浏览数据中转或广告分析服务，不出售用户数据，也不将数据用于广告画像或信贷评估。扩展仅为上述用途使用数据。Tab Cadence 遵守 <a href="https://developer.chrome.com/docs/webstore/program-policies/limited-use">Chrome Web Store 用户数据政策的 Limited Use 要求</a>。</p>
+  <p>有关本政策或本机数据处理的问题，请通过上方的支持页面联系 Tab Cadence。公开反馈请省略密钥、对话正文和账户信息。更新后的政策和生效日期会发布在本页。</p>
+</section>
+</main>
+</html>
